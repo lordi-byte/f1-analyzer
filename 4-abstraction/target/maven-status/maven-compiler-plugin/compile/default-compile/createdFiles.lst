@@ -1,0 +1,5 @@
+com/helmrich/f1analyzer/abstraction/io/FileUtils.class
+com/helmrich/f1analyzer/abstraction/valueobjects/NaturalNumber.class
+com/helmrich/f1analyzer/abstraction/valueobjects/Percentage.class
+com/helmrich/f1analyzer/abstraction/io/CSVReader.class
+com/helmrich/f1analyzer/abstraction/valueobjects/Grade.class

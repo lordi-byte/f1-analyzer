@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="2-application" />
+        <module name="0-plugin" />
+        <module name="4-abstraction" />
+        <module name="1-adapters" />
+        <module name="3-domain" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="0-plugin" target="1.8" />
+      <module name="1-adapters" target="1.8" />
+      <module name="2-application" target="1.8" />
+      <module name="3-domain" target="1.8" />
+      <module name="4-abstraction" target="1.8" />
+      <module name="dualis-bot" target="1.8" />
+      <module name="f1-analyzer" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="0-plugin" options="" />
+    </option>
+  </component>
+</project>

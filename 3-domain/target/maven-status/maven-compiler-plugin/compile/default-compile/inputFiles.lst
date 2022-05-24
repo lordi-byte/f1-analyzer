@@ -1,0 +1,11 @@
+/Users/ianhelmrich/Desktop/f1-analyzer/3-domain/src/main/java/com/helmrich/f1analyzer/domain/telegram/enumerations/Chatroom.java
+/Users/ianhelmrich/Desktop/f1-analyzer/3-domain/src/main/java/com/helmrich/f1analyzer/domain/telegram/entities/Message.java
+/Users/ianhelmrich/Desktop/f1-analyzer/3-domain/src/main/java/com/helmrich/f1analyzer/domain/dualis/entities/Semester.java
+/Users/ianhelmrich/Desktop/f1-analyzer/3-domain/src/main/java/com/helmrich/f1analyzer/domain/dualis/entities/Attempt.java
+/Users/ianhelmrich/Desktop/f1-analyzer/3-domain/src/main/java/com/helmrich/f1analyzer/domain/dualis/enumerations/SemesterType.java
+/Users/ianhelmrich/Desktop/f1-analyzer/3-domain/src/main/java/com/helmrich/f1analyzer/domain/dualis/valueobjects/Rating.java
+/Users/ianhelmrich/Desktop/f1-analyzer/3-domain/src/main/java/com/helmrich/f1analyzer/domain/dualis/entities/Exam.java
+/Users/ianhelmrich/Desktop/f1-analyzer/3-domain/src/main/java/com/helmrich/f1analyzer/domain/dualis/valueobjects/Credits.java
+/Users/ianhelmrich/Desktop/f1-analyzer/3-domain/src/main/java/com/helmrich/f1analyzer/domain/dualis/entities/Module.java
+/Users/ianhelmrich/Desktop/f1-analyzer/3-domain/src/main/java/com/helmrich/f1analyzer/domain/dualis/enumerations/RatingType.java
+/Users/ianhelmrich/Desktop/f1-analyzer/3-domain/src/main/java/com/helmrich/f1analyzer/domain/dualis/interfaces/ModuleMatcher.java
