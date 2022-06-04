@@ -13,6 +13,8 @@ public class DifferenceBetweenDriversCalulatorService {
     private final ConsoleLoggingInterface consoleLogger;
     private Result firstResult = null;
     private Result secondResult = null;
+    private long timeDifferenceInMillis = 0;
+    private double speedDifference = 0;
 
     public DifferenceBetweenDriversCalulatorService(ConsoleLoggingInterface consoleLogger) {
         this.consoleLogger = consoleLogger;
@@ -34,32 +36,34 @@ public class DifferenceBetweenDriversCalulatorService {
         return driverResults;
     }
 
-    public void getTimeDifference(String firstDriverCode, String secondDriverCode, RaceResult raceResult) {
+    public long getTimeDifference(String firstDriverCode, String secondDriverCode, RaceResult raceResult) {
         List<Result> driverResults = getDriverCodes(firstDriverCode, secondDriverCode, raceResult);
         firstResult = driverResults.get(0);
         secondResult = driverResults.get(1);
         if (firstResult == null) consoleLogger.log("Driver Code of first driver is wrong");
         if (secondResult == null) consoleLogger.log("Driver Code of second driver is wrong");
         else {
-            int timeDifferenceInMillis = firstResult.getRaceTimeInMilli() - secondResult.getRaceTimeInMilli();
+            timeDifferenceInMillis = firstResult.getRaceTimeInMilli() - secondResult.getRaceTimeInMilli();
             if (timeDifferenceInMillis < 0) timeDifferenceInMillis *=-1;
             consoleLogger.log("Die Zeitdifferenz der beiden Fahrer liegt bei " +
                     TimeUnit.MILLISECONDS.toSeconds(timeDifferenceInMillis) + " Sekunden");
         }
+        return TimeUnit.MILLISECONDS.toSeconds(timeDifferenceInMillis);
     }
 
-    public void getSpeedDifference(String firstDriverCode, String secondDriverCode, RaceResult raceResult) {
+    public double getSpeedDifference(String firstDriverCode, String secondDriverCode, RaceResult raceResult) {
         List<Result> driverResults = getDriverCodes(firstDriverCode, secondDriverCode, raceResult);
         firstResult = driverResults.get(0);
         secondResult = driverResults.get(1);
         if (firstResult == null) consoleLogger.log("Driver Code of first driver is wrong");
         if (secondResult == null) consoleLogger.log("Driver Code of second driver is wrong");
         else {
-            double speedDifference = firstResult.getFastestLapAvgSpeed() - secondResult.getFastestLapAvgSpeed();
+            speedDifference = firstResult.getFastestLapAvgSpeed() - secondResult.getFastestLapAvgSpeed();
             if (speedDifference < 0) speedDifference *=-1;
             speedDifference = Math.floor(speedDifference * 100) / 100;
             consoleLogger.log("Die Geschwindigkeitsdifferenz der beiden Fahrer liegt bei " +
                     speedDifference + "Km/h");
         }
+        return speedDifference;
     }
 }
