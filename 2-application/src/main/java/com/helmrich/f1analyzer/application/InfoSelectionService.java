@@ -5,6 +5,7 @@ import com.helmrich.f1analyzer.domain.interfaces.CSVReaderInterface;
 import com.helmrich.f1analyzer.domain.interfaces.ConsoleLoggingInterface;
 import com.helmrich.f1analyzer.domain.interfaces.RaceResultInterface;
 
+import java.io.File;
 import java.util.Scanner;
 
 public class InfoSelectionService {
@@ -32,18 +33,21 @@ public class InfoSelectionService {
 
     public void selectInformationOutput(int year, int round, int userInput) {
         RaceResultService raceResultService = new RaceResultService(raceResult, csvReader, consoleLogger);
-        RaceResult raceResultEntity = raceResultService.getRaceResult(year, round);
+        String filePath = new File("").getAbsolutePath();
+        RaceResult raceResultEntity = raceResultService.getRaceResult(year, round, filePath + "/0-plugin/src/main/java/com/helmrich/f1analyzer/io/");
         Scanner scanner = new Scanner(System.in);
         String firstDriverCode, secondDriverCode;
 
         switch (userInput) {
             case 0:
-                return;
+                System.exit(0);
             case 1:
                 raceResultService.logRaceResult(raceResultEntity);
                 startInfoSelection(year, round);
             case 2:
-                new FastestDriverSelectionService(consoleLogger).getFastestDriver(raceResultEntity);
+                FastestDriverSelectionService fastestDriverSelectionService = new FastestDriverSelectionService(consoleLogger);
+                fastestDriverSelectionService.logResult(fastestDriverSelectionService.getFastestDriver(raceResultEntity));
+
                 startInfoSelection(year, round);
             case 3:
                 consoleLogger.log("Gib die Fahrercodes deiner Fahrer an. Hier ein Beispiel: Charles Leclerc = LEC\n" +

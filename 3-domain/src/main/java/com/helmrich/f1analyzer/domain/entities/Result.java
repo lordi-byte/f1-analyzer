@@ -12,6 +12,21 @@ public class Result {
     private int laps;
     private String status;
 
+    public Result(String position, int fastestLapPosition, String fastestLapTime, double fastestLapAvgSpeed, int raceTimeInMilli, double points, Driver driver, int grid, int laps, String status) {
+        this.position = position;
+        this.fastestLapPosition = fastestLapPosition;
+        this.fastestLapTime = fastestLapTime;
+        this.fastestLapAvgSpeed = fastestLapAvgSpeed;
+        this.raceTimeInMilli = raceTimeInMilli;
+        this.points = points;
+        this.driver = driver;
+        this.grid = grid;
+        this.laps = laps;
+        this.status = status;
+    }
+
+    public Result() {}
+
     public String getPosition() {
         return position;
     }

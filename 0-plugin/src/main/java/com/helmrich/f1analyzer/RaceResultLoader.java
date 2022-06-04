@@ -12,9 +12,9 @@ import java.util.List;
 
 public class RaceResultLoader implements RaceResultInterface {
     @Override
-    public List<List<String>> getRaceResult(int year, int round) {
+    public List<List<String>> getRaceResult(int year, int round, String rootPath) {
         CSVReader csvReader = new CSVReader();
-        String filePath = String.format("0-plugin/src/main/java/com/helmrich/f1analyzer/io/RaceResults%d-%d.csv", year, round);
+        String filePath = String.format(rootPath + "RaceResults%d-%d.csv", year, round);
         return csvReader.readFile(filePath);
     }
 }

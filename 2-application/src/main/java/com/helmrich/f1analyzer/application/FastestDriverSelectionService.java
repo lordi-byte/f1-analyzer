@@ -13,18 +13,19 @@ public class FastestDriverSelectionService {
         this.consoleLogger = consoleLogger;
     }
 
-    public void getFastestDriver(RaceResult raceResult) {
+    public Result getFastestDriver(RaceResult raceResult) {
         List<Result> results = raceResult.getResultList();
-        Result fastestResult = null;
+        Result fastestResult = results.get(0);
         for (int i = 0; i < results.size() -1; i++) {
-            Result result1 = results.get(i);
-            Result result2 = results.get(i+1);
-            if (result1.getFastestLapPosition() < result2.getFastestLapPosition()) {
-                fastestResult = result1;
-            } else {
-                fastestResult = result2;
+            Result resultListItem = results.get(i);
+            if (fastestResult.getFastestLapPosition() > resultListItem.getFastestLapPosition()) {
+                fastestResult = resultListItem;
             }
         }
+        return fastestResult;
+    }
+
+    public void logResult(Result fastestResult) {
         consoleLogger.log("Der schnellste Fahrer war: " + fastestResult.getDriver().getGivenName() + " " +
                 fastestResult.getDriver().getFamilyName() + " mit einer Zeit von " +
                 fastestResult.getFastestLapTime() + " Minuten.");

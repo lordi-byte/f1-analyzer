@@ -19,9 +19,9 @@ public class RaceResultService {
         this.consoleLogger = consoleLogger;
     }
 
-    public RaceResult getRaceResult(int year, int round) {
-        List<List<String>> raceResult = raceResultInterface.getRaceResult(year, round);
-        RaceResult raceResultEntity = mapRaceResultToEntity(year, round, raceResult);
+    public RaceResult getRaceResult(int year, int round, String rootPath) {
+        List<List<String>> raceResult = raceResultInterface.getRaceResult(year, round, rootPath);
+        RaceResult raceResultEntity = mapRaceResultToEntity(year, round, raceResult, rootPath);
         return raceResultEntity;
     }
 
@@ -29,12 +29,12 @@ public class RaceResultService {
         consoleLogger.log(raceResult.toString());
     }
     
-    private RaceResult mapRaceResultToEntity(int year, int round, List<List<String>> raceResult) {
+    private RaceResult mapRaceResultToEntity(int year, int round, List<List<String>> raceResult, String rootPath) {
         RaceResult raceResultEntity = new RaceResult();
-        Race race = new RaceLoaderService(csvReader).loadRaceInfo(year, round);
+        Race race = new RaceLoaderService(csvReader).loadRaceInfo(year, round, rootPath);
         raceResultEntity.setRace(race);
         raceResultEntity.setResultList(new ArrayList<>());
-        //TODO: read results. Each row is one result
+
         for (int i = 1; i < raceResult.size(); i++) {
             List<String> resultItem = raceResult.get(i);
             Result result = new Result();
