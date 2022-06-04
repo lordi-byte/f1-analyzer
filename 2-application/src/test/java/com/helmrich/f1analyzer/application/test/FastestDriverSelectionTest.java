@@ -3,7 +3,6 @@ package com.helmrich.f1analyzer.application.test;
 import com.helmrich.f1analyzer.RaceResultLoader;
 import com.helmrich.f1analyzer.application.FastestDriverSelectionService;
 import com.helmrich.f1analyzer.application.RaceResultService;
-import com.helmrich.f1analyzer.domain.entities.Driver;
 import com.helmrich.f1analyzer.domain.entities.RaceResult;
 import com.helmrich.f1analyzer.domain.entities.Result;
 import com.helmrich.f1analyzer.io.CSVReader;
@@ -13,7 +12,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.io.File;
-import java.util.List;
 
 public class FastestDriverSelectionTest {
     private FastestDriverSelectionService fastestDriverSelectionService;
