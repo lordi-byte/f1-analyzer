@@ -1,7 +1,7 @@
 package com.helmrich.f1analyzer.domain.interfaces;
 
-import java.io.IOException;
+import java.util.List;
 
 public interface RaceResultInterface {
-    public StringBuffer getRaceResult(int year, int round) throws IOException;
+    List<List<String>> getRaceResult(int year, int round);
 }

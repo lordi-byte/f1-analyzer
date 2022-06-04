@@ -1,0 +1,21 @@
+DriverPermanentNumber,DriverGivenName,DriverFamilyName,DriverDateOfBirth,DriverNationality,DriverDriverId,DriverCode,ConstructorName,ConstructorNationality,ConstructorConstructorId,Grid,Laps,Status,TimeInmillis,TimeIntext,FastestLapTime,FastestLapAverageSpeedText,FastestLap/_rank,_position,_points
+16,Charles,Leclerc,1997-10-16,Monegasque,leclerc,LEC,Ferrari,Italian,ferrari,1,57,Finished,5853584,1:37:33.584,1:34.570,206.018,1,1,26
+55,Carlos,Sainz,1994-09-01,Spanish,sainz,SAI,Ferrari,Italian,ferrari,3,57,Finished,5859182,+5.598,1:35.740,203.501,3,2,18
+44,Lewis,Hamilton,1985-01-07,British,hamilton,HAM,Mercedes,German,mercedes,5,57,Finished,5863259,+9.675,1:36.228,202.469,5,3,15
+63,George,Russell,1998-02-15,British,russell,RUS,Mercedes,German,mercedes,9,57,Finished,5864795,+11.211,1:36.302,202.313,6,4,12
+20,Kevin,Magnussen,1992-10-05,Danish,kevin_magnussen,MAG,Haas F1 Team,American,haas,7,57,Finished,5868338,+14.754,1:36.623,201.641,8,5,10
+77,Valtteri,Bottas,1989-08-28,Finnish,bottas,BOT,Alfa Romeo,Swiss,alfa,6,57,Finished,5869703,+16.119,1:36.599,201.691,7,6,8
+31,Esteban,Ocon,1996-09-17,French,ocon,OCO,Alpine F1 Team,French,alpine,11,57,Finished,5873007,+19.423,1:37.110,200.630,14,7,6
+22,Yuki,Tsunoda,2000-05-11,Japanese,tsunoda,TSU,AlphaTauri,Italian,alphatauri,16,57,Finished,5873970,+20.386,1:37.104,200.642,13,8,4
+14,Fernando,Alonso,1981-07-29,Spanish,alonso,ALO,Alpine F1 Team,French,alpine,8,57,Finished,5875974,+22.390,1:36.733,201.412,10,9,2
+24,Guanyu,Zhou,1999-05-30,Chinese,zhou,ZHO,Alfa Romeo,Swiss,alfa,15,57,Finished,5876648,+23.064,1:36.685,201.512,9,10,1
+47,Mick,Schumacher,1999-03-22,German,mick_schumacher,MSC,Haas F1 Team,American,haas,12,57,Finished,5886158,+32.574,1:36.956,200.948,11,11,0
+18,Lance,Stroll,1998-10-29,Canadian,stroll,STR,Aston Martin,British,aston_martin,19,57,Finished,5899457,+45.873,1:37.146,200.555,15,12,0
+23,Alexander,Albon,1996-03-23,Thai,albon,ALB,Williams,British,williams,14,57,Finished,5907516,+53.932,1:37.355,200.125,18,13,0
+3,Daniel,Ricciardo,1989-07-01,Australian,ricciardo,RIC,McLaren,British,mclaren,18,57,Finished,5908559,+54.975,1:37.261,200.318,16,14,0
+4,Lando,Norris,1999-11-13,British,norris,NOR,McLaren,British,mclaren,13,57,Finished,5909919,+56.335,1:36.988,200.882,12,15,0
+6,Nicholas,Latifi,1995-06-29,Canadian,latifi,LAT,Williams,British,williams,20,57,Finished,5915379,+1:01.795,1:38.251,198.300,20,16,0
+27,Nico,Hülkenberg,1987-08-19,German,hulkenberg,HUL,Aston Martin,British,aston_martin,17,57,Finished,5917413,+1:03.829,1:38.201,198.401,19,17,0
+11,Sergio,Pérez,1990-01-26,Mexican,perez,PER,Red Bull,Austrian,red_bull,4,56,Engine,0,0,1:36.089,202.762,4,18,0
+33,Max,Verstappen,1997-09-30,Dutch,max_verstappen,VER,Red Bull,Austrian,red_bull,2,54,Steering,0,0,1:35.440,204.140,2,19,0
+10,Pierre,Gasly,1996-02-07,French,gasly,GAS,AlphaTauri,Italian,alphatauri,10,44,Engine,0,0,1:37.324,200.189,17,20,0
